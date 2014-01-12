@@ -35,6 +35,9 @@
                                 <state key="normal" title="显示问题">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="showQuestion:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="b8v-eH-b0h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pP6-xv-sP4">
                                 <rect key="frame" x="60" y="307" width="200" height="30"/>
@@ -42,10 +45,17 @@
                                 <state key="normal" title="显示答案">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="showAnswer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Zf3-Wm-byw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="answerField" destination="ZuA-Jh-h6h" id="S3h-aQ-va4"/>
+                        <outlet property="questionField" destination="maw-F9-Sat" id="oGR-WM-QZo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
